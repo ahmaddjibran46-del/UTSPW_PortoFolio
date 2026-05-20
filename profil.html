@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Profil</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<style>
+		.no-sticky nav {
+			position: static;
+		}
+	</style>
+</head>
+
+<body class="no-sticky">
+	<nav>
+		<ul>
+			<ul class="menu">
+				<li><a href="../index.html#contact">contact</a></li>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="#works">Works</a></li>
+				<li><a href="https://www.instagram.com/AhmadDjibran21" target="_blank">instagram</a></li>
+				<li><a href="profil.html">Form</a></li>
+			</ul>
+		</ul>
+	</nav>
+
+	<section class="project blue">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<h1>Form Profil</h1>
+					<p>Isi data diri singkat di bawah ini, lalu tekan tombol simpan untuk melihat hasilnya.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<form id="profilForm">
+						<ul>
+							<li>
+								<label for="nim">NIM</label><br>
+								<input type="text" id="nim" name="nim" required>
+							</li>
+							<li>
+								<label for="nama">Nama</label><br>
+								<input type="text" id="nama" name="nama" required>
+							</li>
+							<li>
+								<label for="alamat">Alamat</label><br>
+								<textarea id="alamat" name="alamat" rows="3" required></textarea>
+							</li>
+							<li>
+								<label for="hobi">Hobi</label><br>
+								<input type="text" id="hobi" name="hobi" required>
+							</li>
+							<li>
+								<label for="instagram">Instagram</label><br>
+								<input type="text" id="instagram" name="instagram" placeholder="@username" required>
+							</li>
+						</ul>
+						<button type="submit" class="button">Simpan</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="contact">
+		<h2>any questions?<br>
+			find me here <br><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+				data-cfemail="67020a060e0b271d0e0c1506490e03">[email&#160;protected]</a></h2>
+		<p>designed & developed by Andi Zikra 2024</p>
+	</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="javascript/js.js"></script>
+	<script defer
+		src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+		integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+		data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

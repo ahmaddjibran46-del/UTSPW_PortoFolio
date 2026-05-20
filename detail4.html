@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nasi Padang</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<style>
+		.project-container {
+			background: #24160f;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+			color: #f5f5f5;
+			border-radius: 20px;
+			overflow: hidden;
+		}
+
+		.full-width-image {
+			width: 100%;
+			height: 450px;
+			object-fit: cover;
+			object-position: center;
+			filter: brightness(0.7);
+		}
+
+		.breadcrumb {
+			padding: 20px 30px;
+			background: #2f1c12;
+			font-family: 'Poppins', sans-serif;
+			font-size: 14px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+		}
+
+		.breadcrumb a {
+			color: #fdba74;
+			text-decoration: none;
+		}
+
+		.breadcrumb a:hover {
+			color: white;
+		}
+
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 65px;
+			line-height: 1.2;
+			color: white;
+			text-align: center;
+			text-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+			font-family: 'Poppins', sans-serif;
+			font-weight: 700;
+			letter-spacing: 2px;
+		}
+
+		.image-container {
+			position: relative;
+		}
+
+		.project {
+			padding: 80px 50px;
+		}
+
+		.project h2 {
+			font-size: 38px;
+			margin-bottom: 25px;
+			color: #fdba74;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		.project p {
+			color: #f5e6d3;
+			line-height: 1.8;
+			font-size: 15px;
+		}
+
+		.project ul {
+			padding-left: 20px;
+		}
+
+		.project ul li {
+			margin: 12px 0;
+			color: #fff5eb;
+		}
+
+
+		.blue {
+			background: #2f1c12;
+			border-top: 1px solid rgba(255, 255, 255, 0.05);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+		}
+
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+			border-radius: 20px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+		}
+
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+			transition: 0.4s;
+			filter: brightness(0.95);
+		}
+
+		.slider-slide img:hover {
+			transform: scale(1.02);
+		}
+
+		.slider-controls {
+			position: absolute;
+			bottom: 25px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 12px;
+		}
+
+		.slider-dot {
+			width: 12px;
+			height: 12px;
+			background-color: rgba(255, 255, 255, 0.4);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: 0.3s;
+			border: 1px solid rgba(255, 255, 255, 0.5);
+		}
+
+		.slider-dot:hover {
+			background: #fdba74;
+		}
+
+		.slider-dot.active {
+			background: #fdba74;
+		}
+
+		.slider-toggle {
+			display: none;
+		}
+
+		#slide1:checked~.slider-container {
+			transform: translateX(0);
+		}
+
+		#slide2:checked~.slider-container {
+			transform: translateX(-33.33%);
+		}
+
+		#slide3:checked~.slider-container {
+			transform: translateX(-66.66%);
+		}
+
+		footer {
+			text-align: center;
+			padding: 100px 20px;
+			background: #1a0f09;
+			color: #e5d4c3;
+		}
+
+		footer h2 {
+			font-size: 45px;
+			line-height: 1.5;
+			color: white;
+		}
+
+		footer a {
+			color: #fdba74;
+			text-decoration: none;
+		}
+
+		footer p {
+			margin-top: 20px;
+			color: #c4a484;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<ul class="menu">
+				<li><a href="../index.html#contact">contact</a></li>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="#works">Works</a></li>
+				<li><a href="https://www.instagram.com/AhmadDjibran21" target="_blank">instagram</a></li>
+				<li><a href="profil.html">Form</a></li>
+			</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="./img/Nasi Padang Gambar/Nasipadang3.jpg" class="full-width-image" alt="">
+			<h1 class="project-title">Nasi<br>Padang</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../index.html">Home</a> / Branding Strategy for Female Cosmetics
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Overview</h2>
+						<p>Nasi Padang merupakan salah satu makanan khas Indonesia yang berasal dari Sumatera Barat dan
+							terkenal karena cita rasa rempah yang kaya serta pilihan lauk yang beragam. Hidangan ini
+							biasanya disajikan dengan berbagai menu seperti rendang, ayam pop, gulai, dendeng, sambal
+							hijau, dan aneka lauk lainnya yang memiliki perpaduan rasa gurih, pedas, dan autentik.
+							Dengan cita rasa khas dan penyajian yang unik, Nasi Padang menjadi salah satu kuliner
+							Indonesia yang sangat populer hingga dikenal di berbagai negara.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Research & Discovery</h2>
+						<p>Keunikan Nasi Padang berasal dari berbagai unsur kuliner tradisional:</p>
+						<ul>
+							<li>Penggunaan rempah yang kuat dan kaya rasa</li>
+							<li>Beragam lauk khas seperti rendang dan ayam pop</li>
+							<li>Penyajian makanan yang unik dan menarik</li>
+							<li>Cita rasa pedas yang khas masakan Minang</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<p>Nasi Padang memiliki ciri khas kuliner yang mudah dikenali:</p>
+						<ul>
+							<li>Warna makanan yang kaya dan menggugah selera</li>
+							<li>Porsi lauk yang beragam dan melimpah</li>
+							<li>Masakan tradisional dengan resep turun-temurun</li>
+							<li>Popularitas yang terkenal di seluruh Indonesia</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Key Outcomes</h2>
+						<p>Nasi Padang menjadi salah satu makanan Indonesia paling populer Seperti:</p>
+						<ul>
+							<li>Dikenal hingga ke mancanegara</li>
+							<li>Rendang dinobatkan sebagai makanan terenak dunia</li>
+							<li>Memiliki banyak variasi lauk tradisional</li>
+							<li>Menjadi bagian penting budaya kuliner Indonesia</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="./img/Nasi Padang Gambar/Nasipadang1.jpg" alt="Dashboard App">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/Nasi Padang Gambar/Nasipadang2.jpg" alt="Cosmetics Project">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/Nasi Padang Gambar/NasiPadang4.jpg" alt="iPad App">
+								</div>
+							</div>
+
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>any questions?<br>
+			find me here <br><a href="mailto:AhmadDjibran46@gmail.com"> AhmadDjibran46
+			</a>
+		</h2>
+		<p>Design By Ahmad Djibran In 2026 </p>
+	</footer>
+</body>
+
+</html>
